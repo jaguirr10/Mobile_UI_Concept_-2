@@ -1,0 +1,44 @@
+
+<!DOCTYPE html><html lang='en' >
+<head><meta charset='UTF-8'>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mobile UI Concept #2 </title>
+
+</head>
+<body>
+<div class="onephone">
+  <div class="speaker"></div>
+  <div class="twophone">
+    <h1 id="heading">Mobile UI Concept #2</h1>
+    <p id="smalltxt">Juanswebdevprojects.com</p>
+    <nav class="togglemenu">
+      <ul>
+        <li id="rocket"><span class="fa fa-rocket"></span></li>
+        <li id="phone"><span class="fa fa-phone"></span></li>
+        <li><span class="fa fa-envelope"></span></li>
+        <li><span class="fa fa-bell"></span></li>
+      </ul>
+    </nav>
+  </div>
+<div class="menubtn"></div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script >$('.menubtn').click(function(){
+  $('.togglemenu').toggleClass("active");
+});
+$('#rocket').click(function(){
+  $('#smalltxt').text("SOFTWARE DEVELOPER");
+});
+$('#phone').click(function(){
+  $('#smalltxt').text("WEB DEVELOPER");
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Megrim');
+
+body {
+  background: linear-gradient(90deg, #000000, #0f9b0f);
+  padding: 40px;
+  font-family: 'Megrim', cursive;
+  color: #fff;
+}
+.onephone {
+  position: relative;
+  margin: 0 auto;
+  height: 580px;
+  width: 320px;
+  background: linear-gradient(90deg, #000, #84061b);
+  border-radius: 30px;
+  border: 2px solid transparent;
+  padding-top: 60px;
+  -webkit-box-shadow: 15px 18px 52px 5px rgba(0,0,0,0.46); 
+box-shadow: 15px 18px 52px 5px rgba(0,0,0,0.3);
+}
+.twophone {
+  height: 500px;
+  width: 280px;
+  border: 1px solid #ccc;
+  background: linear-gradient(-4545deg, #bb0e2c,#189c58 );
+  margin: 0 auto;
+  position: relative;
+}
+h1 {
+  text-align:center;
+  padding-top: 200px;
+}
+p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.togglemenu {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  opacity:0;
+}
+
+.togglemenu ul {
+  padding: 0px;
+  margin: 0px;
+  
+}
+.togglemenu ul li {
+  display: inline-block;
+  width: 23.7%;
+  text-align: center;
+  font-size:25px;
+}
+.togglemenu ul li:hover{
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+}
+.togglemenu ul li > span {
+  transition: all 1s ease;
+}
+.togglemenu ul li:hover > span {
+  transform: scale(1.1);
+}
+.active {
+  opacity: 1;
+  animation: nav 500ms ease;
+}
+@keyframes nav {
+  0% {
+    opacity: 0;
+    transform:translateY(0%);
+  }
+  30%{
+    transform:translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.menubtn {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 2%;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  transform: translate(-50%, -0%);
+  transition: background .3s linear;
+}
+.menubtn:hover {
+  cursor: pointer;
+  background: rgba(204,204,204,0.3);
+}
+.speaker {
+  position:absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 80px;
+  height: 12px;
+  border: 1px solid #ccc;
+  border-radius: 40px
+}
